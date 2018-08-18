@@ -6,4 +6,4 @@ in other screen:
 socat FILE:example-telegram.txt /tmp/vmodem1
 
 ## example-telegram.txt
-\r\n add the end of line!
+\r\n at the end of line!
