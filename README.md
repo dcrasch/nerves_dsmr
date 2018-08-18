@@ -8,7 +8,7 @@ Read dsmr protocol from smart meter v5 and display using react webpage written i
 * https://github.com/esnet/react-timeseries-charts
 * https://github.com/robertklep/node-dsmr-parser
 
-## Other projects
+## Similar projects
 * https://github.com/dennissiemensma/dsmr-reader
 
 ## License
