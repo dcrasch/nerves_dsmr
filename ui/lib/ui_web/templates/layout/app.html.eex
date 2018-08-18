@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dutch Smart Meter</title>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  </head>
+
+  <body>
+<style>
+  #banner {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #C4C4C4;
+  margin: 0 0 20px;
+  padding: 70px 0;
+  position: relative;
+  background-image: url(/images/back.jpg);
+  }
+#banner .copy {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    display: inline;
+    float: left;
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+#banner h1 {
+    color: #fff;
+    font-family: "HelveticaNeue-CondensedBold","Helvetica Neue CE 600 Condensed","Helvetica Neue LT Condensed","Helvetica Neue 600 Condensed","HelveticaNeue-BoldCondensed","Helvetica Neue BoldCondensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 60px;
+    font-stretch: condensed;
+    font-weight: 700;
+    line-height: 0.9;
+    margin: 0;
+    text-transform: uppercase;
+}
+</style>
+
+<div id="banner">
+  <div class="container">
+    <div class="copy">
+      <h1>Dutch Smart Energy</h1>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  
+  <main role="main">
+    <%= render @view_module, @view_template, assigns %>
+  </main>
+  
+</div> <!-- /container -->
+
+<script src="<%= static_path(@conn, "/js/phoenix.js") %>"></script>
+<script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<div>
+  <div>Electricity Delivered 1:<span id="electricity_delivered_1">?</span>kWh</div>
+  <div>Electricity Delivered 2:<span id="electricity_delivered_2">?</span>kWh</div>
+  <div>Electricity Returned 1:<span id="electricity_returned_1">?</span>kWh</div>
+  <div>Electricity Returned 2:<span id="electricity_returned_2">?</span>kWh</div>
+
+  <div>Power Delivered:<span id="power_delivered">?</span>kW</div>
+  <div>Power Returned: <span id="power_returned">?</span>kW</div>
+
+  <br/>
+  <a href="/chart/index.html">Chart</a>
+</div>

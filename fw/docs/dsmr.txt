@@ -1,0 +1,1 @@
+https://github.com/dennissiemensma/dsmr-reader/blob/master/dsmr_datalogger/models/reading.py
