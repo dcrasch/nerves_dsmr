@@ -1,0 +1,3 @@
+# Generate firmware upload script
+
+mix firmware.gen.script
