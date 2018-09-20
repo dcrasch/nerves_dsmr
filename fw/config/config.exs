@@ -36,12 +36,15 @@ config :ui, UiWeb.Endpoint,
   pubsub: [name: Nerves.PubSub, adapter: Phoenix.PubSub.PG2],
   code_reloader: true
 
+# Allows for tailing of logs.
+config :logger, backends: [RingLogger]
+config :logger, level: :debug
 # Set the number of messages to hold in the circular buffer
 config :logger, RingLogger, max_size: 100
 
 config :nerves_firmware_ssh,
   authorized_keys: [
-    File.read!(Path.join(System.user_home!, ".ssh/id_rsa.pub"))
+    File.read!(Path.join(System.user_home!, ".ssh/id_rsa_nerves.pub"))
   ]
 
 config :dsmr,

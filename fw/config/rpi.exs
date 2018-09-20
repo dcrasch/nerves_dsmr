@@ -1,7 +1,5 @@
 use Mix.Config
 
-config :logger, backends: [RingLogger]
-
 config :ui, UiWeb.Endpoint,
   # used for csrf
   url: [host: "powerpi"],

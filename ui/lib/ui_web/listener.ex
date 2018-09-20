@@ -17,7 +17,10 @@ defmodule UiWeb.Listener do
 
   def handle_events(events, _from, state) do
     for telegram <- events do
-      {:ok, _ } = Ui.Readings.create_reading(telegram)
+      case Ui.Readings.create_reading(telegram) do
+        {:error, reason } -> Logger.info("Listener: #{inspect(reason)}")
+        {:ok, _ } -> true
+      end
       UiWeb.Endpoint.broadcast!("telegram:electricity", "update", telegram)
     end
     {:noreply, [], state}
