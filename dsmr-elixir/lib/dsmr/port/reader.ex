@@ -25,7 +25,7 @@ defmodule Dsmr.Port.Reader do
   end
 
   def handle_info({:nerves_uart, port_name, data}, %State{port_name: port_name} = state) do
-    Logger.info("Serial data: #{inspect(data)}")
+    Logger.debug("Serial data: #{inspect(data)}")
     telegram_parsed = Dsmr.Parser.parse_telegram(data)
     telegram = process_telegram(telegram_parsed)
     Dsmr.Broadcaster.async_notify(telegram)
