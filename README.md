@@ -1,5 +1,5 @@
 # nerves_dsmr
-Read dsmr protocol from smart meter v5 and display using react webpage written in Elixir.
+Read dsmr protocol from smart meter v5 and display using react webpage written in Elixir. Software in running on a raspberry using the nerves framework.
 
 ## Inspiration
 * https://github.com/royveshovda/xgps
