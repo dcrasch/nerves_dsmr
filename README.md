@@ -24,6 +24,10 @@ Read dsmr protocol from smart meter v5 and display using react webpage written i
 * https://www.raspberrypi.org/
 * https://www.sossolutions.nl/slimme-meter-kabel
 
+## Tips
+
+Open the sd flash card with gparted and increase the data partition to store more data (default is 256 mb).
+
 ## License
 This code is distributed under a GPL v3 style license, see the LICENSE file for complete information.
 
